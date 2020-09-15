@@ -1,4 +1,5 @@
 from turtle import *
+import turtle
 from freegames import vector
  
 
@@ -24,6 +25,9 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+    turtle.begin_fill()
+    turtle.circle(70)
+    turtle.end_fill()
     pass  # TODO
 
 def rectangle(start, end):
@@ -81,6 +85,7 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
+onkey(lambda: color('lime'), 'L')
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
