@@ -1,3 +1,5 @@
+#Luis Fernando Tarango Falix   A00827678
+#Hiram David Arguelles Ramirez A00826301
 from turtle import *
 import turtle
 from freegames import vector
